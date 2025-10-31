@@ -10,7 +10,7 @@ const FloatingParticles = () => (
     left: 0,
     width: '100%',
     height: '100%',
-    zIndex: -1,
+    zIndex: -1,  
     background: 'linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #16213e 100%)',
     overflow: 'hidden'
   }}>
