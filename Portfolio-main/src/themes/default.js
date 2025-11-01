@@ -1,22 +1,32 @@
 export default {
-  // Ultra-modern fonts
+  // Professional serif fonts
   fonts: {
-    title: "Plus Jakarta Sans, Inter, -apple-system, BlinkMacSystemFont, sans-serif",
-    main: "Plus Jakarta Sans, Inter, -apple-system, BlinkMacSystemFont, sans-serif"
+    title: "Times New Roman, Georgia, serif",
+    main: "Times New Roman, Georgia, serif"
   },
-  // Modern Glassmorphism Theme
+  // Professional Elegant Theme
   colors: {
-    primary1: "#FFFFFF", // Pure white text
-    background1: "rgba(8, 12, 28, 0.92)", // Deep modern dark
-    accent1: "#6366F1", // Modern indigo
-    button: "#4F46E5", // Deep indigo for buttons
-    background2: "rgba(15, 23, 42, 0.85)", // Modern secondary
-    accent2: "#A78BFA", // Light purple highlights
-    success: "#22C55E", // Modern green
-    warning: "#F59E0B", // Modern amber
-    pink: "#EC4899", // Modern pink
-    cyan: "#06B6D4", // Modern cyan
-    glass: "rgba(255, 255, 255, 0.1)", // Glass effect
+    primary1: "#F5F5DC", // Warm beige white
+    background1: "rgba(28, 25, 20, 0.95)", // Deep warm dark
+    accent1: "#D4AF37", // Elegant gold
+    button: "#B8860B", // Dark golden rod
+    background2: "rgba(40, 35, 28, 0.90)", // Secondary warm dark
+    accent2: "#F4E4BC", // Light cream gold
+    success: "#32CD32", // Lime green
+    warning: "#FFA500", // Orange
+    pink: "#FFB6C1", // Light pink
+    cyan: "#20B2AA", // Light sea green
+    glass: "rgba(212, 175, 55, 0.08)", // Subtle golden glass
+    
+    // Additional elegant theme colors
+    moonGlow: "#F5DEB3", // Wheat/cream glow
+    starlight: "#FFF8DC", // Cornsilk starlight
+    crater: "#2F2B28", // Dark warm shadows
+    lunarSurface: "#8B7355", // Warm gray surface
+    cosmicPurple: "#9932CC", // Dark orchid
+    nebula: "linear-gradient(135deg, #DAA520 0%, #B8860B 100%)", // Golden gradient
+    moonBeam: "linear-gradient(135deg, #FFD700 0%, #FFA500 100%)", // Golden beam
+    nightSky: "linear-gradient(180deg, #1C1917 0%, #292524 50%, #44403C 100%)", // Warm night gradient
   },
   // Breakpoints for responsive design
   breakpoints: {

@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
+import IDCard from '../IDCard/IDCard';
 
-const Hero = () => (
-  <>
-    <Section row nopadding>
+const Hero = () => {
+  const [showIDCard, setShowIDCard] = useState(false);
+
+  return (
+    <>
+      <Section row nopadding>
       <LeftSection style={{ 
         animation: 'heroFadeIn 1.2s ease-out',
         position: 'relative'
@@ -61,7 +65,7 @@ const Hero = () => (
         
         <div style={{ animation: 'slideInLeft 0.8s ease-out 0.6s both' }}>
           <Button 
-            onClick={() => window.location = 'https://github.com/joju29?tab=repositories'}
+            onClick={() => setShowIDCard(true)}
             style={{
               background: 'linear-gradient(135deg, #6366f1, #8b5cf6)',
               border: 'none',
@@ -78,7 +82,7 @@ const Hero = () => (
               e.target.style.boxShadow = '0 4px 15px rgba(99, 102, 241, 0.2)';
             }}
           >
-            <span style={{ position: 'relative', zIndex: 1 }}>View My Work</span>
+            <span style={{ position: 'relative', zIndex: 1 }}>View Details</span>
             <span style={{
               position: 'absolute',
               top: 0,
@@ -92,6 +96,9 @@ const Hero = () => (
         </div>
       </LeftSection>
     </Section>
+    
+    {/* ID Card Component */}
+    <IDCard showCard={showIDCard} setShowCard={setShowIDCard} showButton={false} />
     
     <style jsx>{`
       @keyframes heroFadeIn {
@@ -119,7 +126,8 @@ const Hero = () => (
         50% { transform: scale(1.2); opacity: 0.4; }
       }
     `}</style>
-  </>
-);
+    </>
+  );
+};
 
 export default Hero;

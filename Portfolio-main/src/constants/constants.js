@@ -1,39 +1,25 @@
 export const projects = [
   {
-    title: 'MERN Reminiscene',
-    description: "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
-      image: '/images/mern.png',
-      tags: ['Mongo', 'Express', 'React', 'Node'],
-    source: 'https://github.com/TirthakBM/Social-Media-Blogging-Website',
-    visit: 'https://github.com/TirthakBM/Social-Media-Blogging-Website',
+    title: 'GEAR UP',
+  description: `GearUp is an innovative online bike rental platform designed to simplify renting two-wheelers for customers while enabling vehicle owners to efficiently manage and list their bikes for rent. The system bridges the gap between users seeking affordable, convenient transportation and owners looking to monetize their idle vehicles.
+
+Developed using HTML, CSS, PHP, and MySQL, GearUp provides a user-friendly web interface that ensures seamless interaction between three key stakeholders — Admin, Vehicle Owner, and Customer.`,
+    image: '/images/Screenshot 2025-11-01 084638.png', // Your GEAR UP project screenshot
+    video: '/Screen Recording 2025-11-01 083050.mp4', // Your GEAR UP project video
+    tags: ['PHP', 'MySQL', 'CSS', 'HTML'], // Your project technologies
+    source: 'https://github.com/joju29/your-project-1', // Your GitHub link
+    visit: 'https://your-project1-demo.com', // Your live demo link
     id: 0,
   },
   {
-    title: 'TK Gym',
-    description:"This is a Responsive Gym Website were you can find the details about the gym ,  their offers , their planning ,their trainers and much more.",
-    image: '/images/gym.png',
-    tags: ['HTML', 'JavaScript', 'CSS'],
-    source: 'https://github.com/TirthakBM/Responsive-Gym-Website',
-    visit: 'https://github.com/TirthakBM/Responsive-Gym-Website',
+    title: 'My Second Project',
+    description: "Replace this with your second project description. Describe the features, technologies used, and any challenges you overcame.",
+    image: '/images/project2.jpg', // Add your project 2 image here
+    video: '/videos/project2-demo.mp4', // Add your project 2 video here
+    tags: ['Angular', 'TypeScript', 'CSS3'], // Your project technologies
+    source: 'https://github.com/joju29/your-project-2', // Your GitHub link
+    visit: 'https://your-project2-demo.com', // Your live demo link
     id: 1,
-  },
-  {
-    title: 'Hotel Management App',
-    description: "The Hotel Management System Project is a general software developed to simplify hotel operations by automating them. the project has Login System security with database in MySql. This project collects information about customers, room and other hotel services. you can add user and costomers and delete them and search user as per there name, phone no.  ",
-      image: '/images/hotel.png',
-      tags: ['Python', 'MySQL'],
-    source: 'https://github.com/TirthakBM/HOTEL-MANAGEMENT-SYSTEM',
-    visit: 'https://github.com/TirthakBM/HOTEL-MANAGEMENT-SYSTEM',
-    id: 2,
-  },
-  {
-    title: 'DashBoard',
-    description: "This is a Admin Dashboard App With Theming, Tables, Charts, Calendar, Kanban and More using synfusion.",
-    image: '/images/dash.png',
-    tags: ['React', 'Syncfusion'],
-    source: 'https://github.com/TirthakBM/DashBoard',
-    visit: 'https://github.com/TirthakBM/DashBoard',
-    id: 3,
   },
 ];
 
