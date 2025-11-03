@@ -74,7 +74,6 @@ const Projects = () => {
               <div style={{ flex: 1, paddingRight: '2rem' }}>
                 <TitleContent>
                   <HeaderThree 
-                    title 
                     style={{ 
                       background: 'linear-gradient(135deg, #F5F5DC, #F4E4BC, #D4AF37)',
                       backgroundClip: 'text',
