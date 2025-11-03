@@ -24,9 +24,24 @@ Developed using HTML, CSS, PHP, and MySQL, GearUp provides a user-friendly web i
 ];
 
 export const TimeLineData = [
-  { year: 2020, text: 'Started learning programming with C and C++', },
-  { year: 2021, text: 'Mastered Java and began web development', },
-  { year: 2022, text: 'Dove deep into frontend with React and Angular', },
-  { year: 2023, text: 'Expanded skills with PHP and full-stack concepts', },
-  { year: 2024, text: 'Building modern, responsive web applications', },
+  { 
+    year: 2020, 
+    text: 'Started my programming journey with C and C++, building a strong foundation in programming logic, data structures, and algorithmic thinking.' 
+  },
+  { 
+    year: 2021, 
+    text: 'Mastered Java object-oriented programming and began exploring web development fundamentals with HTML, CSS, and JavaScript.' 
+  },
+  { 
+    year: 2022, 
+    text: 'Specialized in modern frontend frameworks, gaining expertise in React.js and Angular for building dynamic, interactive user interfaces.' 
+  },
+  { 
+    year: 2023, 
+    text: 'Expanded into full-stack development with PHP and MySQL, creating complete web applications with robust backend functionality.' 
+  },
+  { 
+    year: 2024, 
+    text: 'Currently building modern, responsive web applications using cutting-edge technologies and best practices in software development.' 
+  },
 ];

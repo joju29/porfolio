@@ -119,7 +119,7 @@ const Acomplishments = () => {
           scrollBehavior: 'smooth',
           WebkitOverflowScrolling: 'touch',
           scrollbarWidth: 'thin',
-          scrollbarColor: 'rgba(212, 175, 55, 0.5) rgba(0, 0, 0, 0.1)'
+          scrollbarColor: 'rgba(59, 130, 246, 0.5) rgba(0, 0, 0, 0.1)'
         }}>
         {certifications.map((cert, index) => (
           <div key={index} style={{
@@ -143,9 +143,9 @@ const Acomplishments = () => {
               borderRadius: '15px',
               marginBottom: '1rem',
               overflow: 'hidden',
-              border: '3px solid rgba(212, 175, 55, 0.3)',
-              cursor: 'pointer',
-              boxShadow: '0 8px 25px rgba(212, 175, 55, 0.2)',
+            border: '3px solid rgba(59, 130, 246, 0.3)',
+            cursor: 'pointer',
+            boxShadow: '0 8px 25px rgba(59, 130, 246, 0.2)',
               transition: 'all 0.3s ease'
             }}
             onClick={() => window.open(cert.image, '_blank')}
@@ -193,24 +193,24 @@ const Acomplishments = () => {
                 </>
               )}
             </div>
-            <h3 style={{ 
-              fontSize: '1.4rem', 
-              color: '#D4AF37', 
-              margin: '0 0 0.5rem 0',
-              fontWeight: '600',
-              lineHeight: '1.3'
-            }}>
-              {cert.title}
-            </h3>
-            <p style={{ 
-              fontSize: '1rem', 
-              color: '#F4E4BC', 
-              margin: 0,
-              fontWeight: '400',
-              opacity: 0.8
-            }}>
-              {cert.issuer}
-            </p>
+                      <h3 style={{ 
+            fontSize: '1.4rem', 
+            color: '#3b82f6', 
+            margin: '0 0 0.5rem 0',
+            fontWeight: '600',
+            lineHeight: '1.3'
+          }}>
+            {cert.title}
+          </h3>
+          <p style={{ 
+            fontSize: '1rem', 
+            color: '#94a3b8', 
+            margin: 0,
+            fontWeight: '400',
+            opacity: 0.8
+          }}>
+            {cert.issuer}
+          </p>
           </div>
         ))}
       </div>
@@ -227,17 +227,15 @@ const Acomplishments = () => {
           border-radius: 10px;
         }
         
-        .certificates-scroll::-webkit-scrollbar-thumb {
-          background: linear-gradient(90deg, #D4AF37, #B8860B);
-          border-radius: 10px;
-          transition: background 0.3s ease;
-        }
-        
-        .certificates-scroll::-webkit-scrollbar-thumb:hover {
-          background: linear-gradient(90deg, #F4E4BC, #D4AF37);
-        }
-        
-        @keyframes slideInUp {
+      .certificates-scroll::-webkit-scrollbar-thumb {
+        background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+        border-radius: 10px;
+        transition: background 0.3s ease;
+      }
+      
+      .certificates-scroll::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(90deg, #60a5fa, #3b82f6);
+      }        @keyframes slideInUp {
           from {
             opacity: 0;
             transform: translateY(60px);

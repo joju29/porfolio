@@ -2,7 +2,7 @@ import React from 'react';
 
 const BackgroundAnimation = () => (
   <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1, overflow: 'hidden' }}>
-    {/* Professional Lunar Gradient Background */}
+    {/* Professional Elegant Background */}
     <div style={{
       position: 'absolute',
       top: 0,
@@ -10,16 +10,16 @@ const BackgroundAnimation = () => (
       width: '100%',
       height: '100%',
       background: `
-        linear-gradient(180deg, #1C1917 0%, #292524 30%, #44403C 60%, #292524 100%),
-        radial-gradient(ellipse at 20% 20%, rgba(212, 175, 55, 0.12) 0%, transparent 60%),
-        radial-gradient(ellipse at 80% 80%, rgba(244, 228, 188, 0.08) 0%, transparent 50%),
-        radial-gradient(circle at 50% 10%, rgba(245, 245, 220, 0.05) 0%, transparent 40%)
+        linear-gradient(135deg, #0f172a 0%, #1e293b 30%, #334155 60%, #1e293b 100%),
+        radial-gradient(ellipse at 20% 20%, rgba(59, 130, 246, 0.08) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 80%, rgba(99, 102, 241, 0.06) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(147, 197, 253, 0.04) 0%, transparent 40%)
       `,
-      backgroundSize: '100% 100%, 800px 600px, 600px 800px, 1200px 400px',
-      animation: 'lunarFlow 25s ease infinite'
+      backgroundSize: '100% 100%, 1200px 800px, 800px 600px, 1000px 1000px',
+      animation: 'professionalFlow 30s ease infinite'
     }} />
     
-    {/* Elegant Floating Moons */}
+    {/* Professional Floating Elements */}
     {[...Array(5)].map((_, i) => (
       <div
         key={i}
@@ -27,147 +27,158 @@ const BackgroundAnimation = () => (
           position: 'absolute',
           borderRadius: '50%',
           background: `radial-gradient(circle at 30% 30%, 
-            ${i % 2 === 0 ? 'rgba(212, 175, 55, 0.15)' : 'rgba(244, 228, 188, 0.12)'}, 
-            transparent 70%)`,
-          border: `1px solid ${i % 2 === 0 ? 'rgba(212, 175, 55, 0.2)' : 'rgba(244, 228, 188, 0.15)'}`,
-          backdropFilter: 'blur(25px)',
-          width: `${80 + i * 25}px`,
-          height: `${80 + i * 25}px`,
-          left: `${10 + i * 18}%`,
-          top: `${5 + i * 20}%`,
-          animation: `lunarFloat${i} ${12 + i * 3}s ease-in-out infinite`,
-          filter: 'drop-shadow(0 0 20px rgba(212, 175, 55, 0.1))',
+            rgba(59, 130, 246, 0.08), transparent 70%)`,
+          border: '1px solid rgba(59, 130, 246, 0.15)',
+          backdropFilter: 'blur(30px)',
+          width: `${100 + i * 30}px`,
+          height: `${100 + i * 30}px`,
+          left: `${15 + i * 18}%`,
+          top: `${8 + i * 20}%`,
+          animation: `professionalFloat${i % 3} ${20 + i * 5}s ease-in-out infinite`,
+          filter: 'drop-shadow(0 0 20px rgba(59, 130, 246, 0.1))',
+          opacity: 0.6,
         }}
       />
     ))}
     
-    {/* Professional Constellation Lines */}
+    {/* Professional Grid Pattern */}
     <svg style={{
       position: 'absolute',
       top: 0,
       left: 0,
       width: '100%',
       height: '100%',
-      opacity: 0.15
+      opacity: 0.08
     }}>
       <defs>
-        <filter id="glow">
-          <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+        <pattern id="professionalGrid" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+          <path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(59, 130, 246, 0.3)" strokeWidth="1"/>
+        </pattern>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
           <feMerge> 
             <feMergeNode in="coloredBlur"/>
             <feMergeNode in="SourceGraphic"/>
           </feMerge>
         </filter>
       </defs>
-      <g stroke="rgba(212, 175, 55, 0.3)" strokeWidth="1" fill="none" filter="url(#glow)">
-        <path d="M100,150 L250,200 L400,120 L550,180" style={{animation: 'drawPath 8s ease-in-out infinite'}} />
-        <path d="M150,300 L300,250 L450,320 L600,280" style={{animation: 'drawPath 10s ease-in-out infinite 2s'}} />
-        <path d="M50,450 L200,400 L350,480 L500,420" style={{animation: 'drawPath 12s ease-in-out infinite 4s'}} />
+      <rect width="100%" height="100%" fill="url(#professionalGrid)" />
+      
+      {/* Subtle connection lines */}
+      <g stroke="rgba(59, 130, 246, 0.2)" strokeWidth="1" fill="none" filter="url(#softGlow)">
+        <path d="M100,200 L300,180 L500,220 L700,200" style={{animation: 'drawProfessionalPath 25s ease-in-out infinite'}} />
+        <path d="M150,350 L350,330 L550,370 L750,350" style={{animation: 'drawProfessionalPath 30s ease-in-out infinite 5s'}} />
       </g>
-      <g fill="rgba(245, 245, 220, 0.8)">
-        <circle cx="100" cy="150" r="2" style={{animation: 'starTwinkle 4s ease-in-out infinite'}} />
-        <circle cx="250" cy="200" r="1.5" style={{animation: 'starTwinkle 3s ease-in-out infinite 1s'}} />
-        <circle cx="400" cy="120" r="2" style={{animation: 'starTwinkle 5s ease-in-out infinite 2s'}} />
-        <circle cx="550" cy="180" r="1.5" style={{animation: 'starTwinkle 3.5s ease-in-out infinite 0.5s'}} />
+      
+      {/* Professional dots */}
+      <g fill="rgba(59, 130, 246, 0.4)">
+        <circle cx="200" cy="150" r="2" style={{animation: 'professionalTwinkle 8s ease-in-out infinite'}} />
+        <circle cx="600" cy="300" r="1.5" style={{animation: 'professionalTwinkle 10s ease-in-out infinite 3s'}} />
+        <circle cx="400" cy="250" r="2" style={{animation: 'professionalTwinkle 12s ease-in-out infinite 6s'}} />
       </g>
     </svg>
     
-    {/* Elegant Geometric Elements */}
+    {/* Professional Geometric Elements */}
     <div style={{
       position: 'absolute',
       top: '15%',
       right: '8%',
-      width: '160px',
-      height: '160px',
-      border: '1px solid rgba(212, 175, 55, 0.25)',
-      borderRadius: '24px',
-      animation: 'elegantRotate 40s linear infinite',
-      backdropFilter: 'blur(15px)',
-      background: 'linear-gradient(135deg, rgba(212, 175, 55, 0.05), transparent)',
+      width: '180px',
+      height: '180px',
+      border: '1px solid rgba(59, 130, 246, 0.2)',
+      borderRadius: '20px',
+      animation: 'professionalRotate 60s linear infinite',
+      backdropFilter: 'blur(25px)',
+      background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.05), transparent)',
+      opacity: 0.7,
     }} />
     
     <div style={{
       position: 'absolute',
-      bottom: '15%',
-      left: '8%',
+      bottom: '20%',
+      left: '10%',
       width: '120px',
       height: '120px',
-      border: '2px solid rgba(244, 228, 188, 0.2)',
+      border: '1px solid rgba(99, 102, 241, 0.25)',
       borderRadius: '50%',
-      animation: 'lunarPulse 6s ease-in-out infinite',
-      background: 'radial-gradient(circle, rgba(245, 245, 220, 0.03), transparent)',
+      animation: 'professionalPulse 12s ease-in-out infinite',
+      background: 'radial-gradient(circle, rgba(59, 130, 246, 0.03), transparent)',
+      opacity: 0.6,
     }} />
     
-    {/* Subtle Particles */}
-    {[...Array(12)].map((_, i) => (
+    {/* Professional Particles */}
+    {[...Array(8)].map((_, i) => (
       <div
         key={`particle-${i}`}
         style={{
           position: 'absolute',
-          width: '3px',
-          height: '3px',
-          background: 'rgba(245, 245, 220, 0.6)',
+          width: '2px',
+          height: '2px',
+          background: 'rgba(59, 130, 246, 0.4)',
           borderRadius: '50%',
           left: `${Math.random() * 100}%`,
           top: `${Math.random() * 100}%`,
-          animation: `particleDrift${i % 4} ${15 + Math.random() * 10}s linear infinite`,
+          animation: `professionalParticleDrift ${30 + Math.random() * 20}s linear infinite`,
           filter: 'blur(0.5px)',
+          opacity: 0.6,
         }}
       />
     ))}
 
     <style jsx>{`
-      @keyframes lunarFlow {
+      @keyframes professionalFlow {
         0%, 100% { 
-          background-position: 0% 0%, 20% 20%, 80% 80%, 50% 10%; 
-          transform: scale(1);
-        }
-        25% { 
-          background-position: 100% 0%, 60% 40%, 40% 60%, 70% 30%; 
-          transform: scale(1.02);
+          background-position: 0% 0%, 20% 20%, 80% 80%, 50% 50%; 
         }
         50% { 
-          background-position: 0% 100%, 80% 60%, 20% 40%, 30% 70%; 
-          transform: scale(1);
-        }
-        75% { 
-          background-position: 100% 100%, 40% 80%, 60% 20%, 90% 50%; 
-          transform: scale(1.01);
+          background-position: 100% 100%, 60% 60%, 40% 40%, 70% 30%; 
         }
       }
       
-      @keyframes lunarFloat0 { 0%, 100% { transform: translate(0px, 0px) rotate(0deg); } 50% { transform: translate(-15px, -25px) rotate(180deg); } }
-      @keyframes lunarFloat1 { 0%, 100% { transform: translate(0px, 0px) rotate(0deg); } 50% { transform: translate(20px, -30px) rotate(-120deg); } }
-      @keyframes lunarFloat2 { 0%, 100% { transform: translate(0px, 0px) rotate(0deg); } 50% { transform: translate(-25px, -20px) rotate(240deg); } }
-      @keyframes lunarFloat3 { 0%, 100% { transform: translate(0px, 0px) rotate(0deg); } 50% { transform: translate(30px, -35px) rotate(-60deg); } }
-      @keyframes lunarFloat4 { 0%, 100% { transform: translate(0px, 0px) rotate(0deg); } 50% { transform: translate(-20px, -40px) rotate(300deg); } }
-      
-      @keyframes elegantRotate { 
-        from { transform: rotate(0deg) scale(1); } 
-        50% { transform: rotate(180deg) scale(1.1); }
-        to { transform: rotate(360deg) scale(1); } 
+      @keyframes professionalFloat0 { 
+        0%, 100% { transform: translate(0px, 0px); } 
+        50% { transform: translate(-15px, -20px); }
+      }
+      @keyframes professionalFloat1 { 
+        0%, 100% { transform: translate(0px, 0px); } 
+        50% { transform: translate(20px, -25px); }
+      }
+      @keyframes professionalFloat2 { 
+        0%, 100% { transform: translate(0px, 0px); } 
+        50% { transform: translate(-25px, -15px); }
       }
       
-      @keyframes lunarPulse { 
-        0%, 100% { transform: scale(1); opacity: 0.6; border-width: 2px; } 
-        50% { transform: scale(1.15); opacity: 1; border-width: 1px; } 
+      @keyframes professionalRotate { 
+        from { transform: rotate(0deg); } 
+        to { transform: rotate(360deg); } 
       }
       
-      @keyframes starTwinkle {
-        0%, 100% { opacity: 0.3; transform: scale(1); }
-        50% { opacity: 1; transform: scale(1.5); }
+      @keyframes professionalPulse { 
+        0%, 100% { 
+          transform: scale(1); 
+          opacity: 0.6; 
+        } 
+        50% { 
+          transform: scale(1.05); 
+          opacity: 0.8; 
+        } 
       }
       
-      @keyframes drawPath {
+      @keyframes professionalTwinkle {
+        0%, 100% { opacity: 0.2; }
+        50% { opacity: 0.6; }
+      }
+      
+      @keyframes drawProfessionalPath {
         0% { stroke-dasharray: 0, 1000; }
         50% { stroke-dasharray: 500, 500; }
         100% { stroke-dasharray: 1000, 0; }
       }
       
-      @keyframes particleDrift0 { 0% { transform: translateY(0px) translateX(0px); } 100% { transform: translateY(-100vh) translateX(50px); } }
-      @keyframes particleDrift1 { 0% { transform: translateY(0px) translateX(0px); } 100% { transform: translateY(-100vh) translateX(-30px); } }
-      @keyframes particleDrift2 { 0% { transform: translateY(0px) translateX(0px); } 100% { transform: translateY(-100vh) translateX(20px); } }
-      @keyframes particleDrift3 { 0% { transform: translateY(0px) translateX(0px); } 100% { transform: translateY(-100vh) translateX(-40px); } }
+      @keyframes professionalParticleDrift { 
+        0% { transform: translateY(100vh) translateX(0px); } 
+        100% { transform: translateY(-100px) translateX(30px); } 
+      }
     `}</style>
     <svg
       className="BgAnimation__svg"

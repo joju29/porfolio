@@ -7,7 +7,9 @@ export const DropDownContainer = styled.div`
   right: -25%;
   top: 40px;
   width: 280px;
-  background-color: #fff;
+  background-color: rgba(30, 41, 59, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(59, 130, 246, 0.2);
   border-radius: 8px;
   z-index: 100;
   padding: 4px 0;
@@ -36,16 +38,16 @@ export const DropDownItem = styled.a`
 
   &:hover {
     transform: scale(1.05);
-    background-color: #eee;
-    box-shadow: 0 3px 6px 3px rgba(0,0,0,.3);
+    background-color: rgba(59, 130, 246, 0.1);
+    box-shadow: 0 3px 6px 3px rgba(59, 130, 246, 0.2);
   }
 
   &:nth-of-type(2n):hover {
-    box-shadow: 0 0 8px 4px rgba(0,0,0,.3);
+    box-shadow: 0 0 8px 4px rgba(59, 130, 246, 0.2);
   }
 
   &:nth-of-type(3n):hover {
-    box-shadow: 0 -3px 6px 3px rgba(0,0,0,.3);
+    box-shadow: 0 -3px 6px 3px rgba(59, 130, 246, 0.2);
   }
 `
 
@@ -61,14 +63,14 @@ export const DropDownTextContainer = styled.div`
 `
 
 export const DropDownItemTitle = styled.h2`
-  color: #0f1624;
+  color: #ffffff;
   font-size: 18px;
   line-height: 26px;
   text-align: start;
 `
 
 export const DropDownItemDesc = styled.p`
-  color: #0f1624;
+  color: rgba(255, 255, 255, 0.75);
   opacity: 0.5;
   font-size: 14px;
   line-height: 22px;

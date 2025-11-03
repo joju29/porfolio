@@ -1,32 +1,32 @@
 export default {
-  // Professional serif fonts
+  // Professional modern fonts
   fonts: {
-    title: "Times New Roman, Georgia, serif",
-    main: "Times New Roman, Georgia, serif"
+    title: "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+    main: "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
   },
-  // Professional Elegant Theme
+  // Professional Business Theme
   colors: {
-    primary1: "#F5F5DC", // Warm beige white
-    background1: "rgba(28, 25, 20, 0.95)", // Deep warm dark
-    accent1: "#D4AF37", // Elegant gold
-    button: "#B8860B", // Dark golden rod
-    background2: "rgba(40, 35, 28, 0.90)", // Secondary warm dark
-    accent2: "#F4E4BC", // Light cream gold
-    success: "#32CD32", // Lime green
-    warning: "#FFA500", // Orange
-    pink: "#FFB6C1", // Light pink
-    cyan: "#20B2AA", // Light sea green
-    glass: "rgba(212, 175, 55, 0.08)", // Subtle golden glass
-    
-    // Additional elegant theme colors
-    moonGlow: "#F5DEB3", // Wheat/cream glow
-    starlight: "#FFF8DC", // Cornsilk starlight
-    crater: "#2F2B28", // Dark warm shadows
-    lunarSurface: "#8B7355", // Warm gray surface
-    cosmicPurple: "#9932CC", // Dark orchid
-    nebula: "linear-gradient(135deg, #DAA520 0%, #B8860B 100%)", // Golden gradient
-    moonBeam: "linear-gradient(135deg, #FFD700 0%, #FFA500 100%)", // Golden beam
-    nightSky: "linear-gradient(180deg, #1C1917 0%, #292524 50%, #44403C 100%)", // Warm night gradient
+    primary1: "#ffffff", // Pure white
+    background1: "rgba(15, 23, 42, 0.95)", // Professional slate dark
+    accent1: "#3b82f6", // Professional blue
+    button: "#2563eb", // Darker professional blue
+    background2: "rgba(30, 41, 59, 0.9)", // Secondary professional slate
+    accent2: "#60a5fa", // Light professional blue
+    success: "#10b981", // Emerald green
+    warning: "#f59e0b", // Amber
+    pink: "#ec4899", // Subtle pink accent
+    cyan: "#06b6d4", // Professional cyan
+    glass: "rgba(59, 130, 246, 0.08)", // Subtle professional blue glass
+
+    // Additional professional theme colors
+    moonGlow: "#dbeafe", // Light professional blue
+    starlight: "#f8fafc", // Clean white
+    crater: "#1e293b", // Professional dark slate
+    lunarSurface: "#475569", // Medium professional slate
+    cosmicPurple: "#6366f1", // Professional indigo
+    nebula: "linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)", // Professional blue gradient
+    moonBeam: "linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%)", // Professional light blue gradient
+    nightSky: "linear-gradient(180deg, #0f172a 0%, #1e293b 50%, #334155 100%)", // Professional dark gradient
   },
   // Breakpoints for responsive design
   breakpoints: {
